@@ -5,7 +5,16 @@
   "projects": {
     "farma-nikolic": {
       "projectType": "application",
-      "schematics": {},
+      "schematics": {
+        "@schematics/angular:component": {"type": "component", "skipTests": true},
+        "@schematics/angular:directive": { "type": "directive", "skipTests": true },
+        "@schematics/angular:service": { "type": "service", "skipTests": true },
+        "@schematics/angular:guard": { "typeSeparator": ".", "skipTests": true },
+        "@schematics/angular:interceptor": { "typeSeparator": ".", "skipTests": true },
+        "@schematics/angular:module": { "typeSeparator": ".", "skipTests": true },
+        "@schematics/angular:pipe": { "typeSeparator": ".", "skipTests": true },
+        "@schematics/angular:resolver": { "typeSeparator": ".", "skipTests": true }
+      },
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
@@ -19,33 +28,76 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              {
-                "glob": "**/*",
-                "input": "public"
-              }
+              "src/favicon.ico",
+              "src/assets"
             ],
             "styles": [
               "node_modules/bootstrap/dist/css/bootstrap.min.css",
               "src/assets/admin/plugins/daterangepicker/daterangepicker.css",
               "src/assets/admin/plugins/simplebar/simplebar.css",
               "src/assets/admin/css/ekka.css",
+
+              "src/assets/frontend/vendors/animate/animate.min.css",
+              "src/assets/frontend/vendors/animate/custom-animate.css",
+              "src/assets/frontend/vendors/fontawesome/css/all.min.css",
+              "src/assets/frontend/vendors/jarallax/jarallax.css",
+              "src/assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.css",
+              "src/assets/frontend/vendors/nouislider/nouislider.min.css",
+              "src/assets/frontend/vendors/nouislider/nouislider.pips.css",
+              "src/assets/frontend/vendors/odometer/odometer.min.css",
+              "src/assets/frontend/vendors/swiper/swiper.min.css",
+              "src/assets/frontend/vendors/agrion-icons/style.css",
+              "src/assets/frontend/vendors/tiny-slider/tiny-slider.min.css",
+              "src/assets/frontend/vendors/reey-font/stylesheet.css",
+              "src/assets/frontend/vendors/owl-carousel/owl.carousel.min.css",
+              "src/assets/frontend/vendors/owl-carousel/owl.theme.default.min.css",
+              "src/assets/frontend/vendors/bxslider/jquery.bxslider.css",
+              "src/assets/frontend/vendors/bootstrap-select/css/bootstrap-select.min.css",
+              "src/assets/frontend/vendors/vegas/vegas.min.css",
+              "src/assets/frontend/vendors/jquery-ui/jquery-ui.css",
+              "src/assets/frontend/vendors/timepicker/timePicker.css",
+              "src/assets/frontend/css/agrion.css",
+              "src/assets/frontend/css/agrion-responsive.css",
+
               "src/styles.css"
             ],
             "scripts": [
-              "src/assets/admin/plugins/jquery/jquery-3.5.1.min.js",
+              "node_modules/jquery/dist/jquery.min.js",
               "node_modules/bootstrap/dist/js/bootstrap.bundle.min.js",
               "src/assets/admin/plugins/simplebar/simplebar.min.js",
               "src/assets/admin/plugins/jquery-zoom/jquery.zoom.min.js",
               "src/assets/admin/plugins/slick/slick.min.js",
               "src/assets/admin/plugins/charts/Chart.min.js",
               "src/assets/admin/js/chart.js",
-              "src/assets/admin/plugins/charts/google-map-loader.js",
-              "src/assets/admin/plugins/charts/google-map.js",
               "src/assets/admin/plugins/daterangepicker/moment.min.js",
               "src/assets/admin/plugins/daterangepicker/daterangepicker.js",
               "src/assets/admin/js/date-range.js",
               "src/assets/admin/plugins/options-sidebar/optionswitcher.js",
-              "src/assets/admin/js/ekka.js"
+              "src/assets/admin/js/ekka.js",
+
+              "src/assets/frontend/vendors/jarallax/jarallax.min.js",
+              "src/assets/frontend/vendors/jquery-ajaxchimp/jquery.ajaxchimp.min.js",
+              "src/assets/frontend/vendors/jquery-appear/jquery.appear.min.js",
+              "src/assets/frontend/vendors/jquery-circle-progress/jquery.circle-progress.min.js",
+              "src/assets/frontend/vendors/jquery-magnific-popup/jquery.magnific-popup.min.js",
+              "src/assets/frontend/vendors/jquery-validate/jquery.validate.min.js",
+              "src/assets/frontend/vendors/nouislider/nouislider.min.js",
+              "src/assets/frontend/vendors/odometer/odometer.min.js",
+              "src/assets/frontend/vendors/swiper/swiper.min.js",
+              "src/assets/frontend/vendors/tiny-slider/tiny-slider.min.js",
+              "src/assets/frontend/vendors/wnumb/wNumb.min.js",
+              "src/assets/frontend/vendors/wow/wow.js",
+              "src/assets/frontend/vendors/isotope/isotope.js",
+              "src/assets/frontend/vendors/countdown/countdown.min.js",
+              "src/assets/frontend/vendors/owl-carousel/owl.carousel.min.js",
+              "src/assets/frontend/vendors/bxslider/jquery.bxslider.min.js",
+              "src/assets/frontend/vendors/bootstrap-select/js/bootstrap-select.min.js",
+              "src/assets/frontend/vendors/vegas/vegas.min.js",
+              "src/assets/frontend/vendors/jquery-ui/jquery-ui.js",
+              "src/assets/frontend/vendors/timepicker/timePicker.js",
+              "src/assets/frontend/vendors/circleType/jquery.circleType.js",
+              "src/assets/frontend/vendors/circleType/jquery.lettering.min.js",
+              "src/assets/frontend/js/agrion.js"
             ]
           },
           "configurations": {
